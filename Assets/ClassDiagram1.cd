@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CarPhysics">
+    <Position X="10.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACwAAABQAAIABAAAAAQQBAAAIAQAAEAQgCEw=</HashCode>
+      <FileName>Assets\Scripts\Car\CarPhysics.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CarInput" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameInput">
+    <Position X="14.25" Y="4.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\InputGeneration\GameInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarController">
+    <Position X="17" Y="2" Width="1.5" />
+    <AssociationLine Name="currentInput" Type="GameInput" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17" Y="3.188" />
+        <Point X="14.875" Y="3.188" />
+        <Point X="14.875" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAACAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\InputGeneration\CarController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CarScript" />
+      <Field Name="currentInput" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AICarController" Collapsed="true">
+    <Position X="16.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\InputGeneration\AICarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerCarController">
+    <Position X="18.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAACAAAAIAAAAABAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\InputGeneration\PlayerCarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraMovement">
+    <Position X="7.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQABECAAABAIAAAAIAABAAAIAAQMAAAAAAAAGgA=</HashCode>
+      <FileName>Assets\Scripts\Control\CameraMovement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="carScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CountdownManager">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACACAAAAgAAQABAABMAAAAAAAAAAAAAAAAAQI=</HashCode>
+      <FileName>Assets\Scripts\Control\CountdownManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RaceResultManager">
+    <Position X="11.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgEAAAAAAIAAAAAAAAgAIAAAAAAgACAA=</HashCode>
+      <FileName>Assets\Scripts\Control\RaceResultManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeManager">
+    <Position X="9.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAgBAAAAAAAAAAAAIAgAAAAAIAAAQAgAACAA=</HashCode>
+      <FileName>Assets\Scripts\Control\TimeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goal">
+    <Position X="16.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RacingTrack\Goal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager">
+    <Position X="13.25" Y="7.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="EventManager.RaceEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Control\EventManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="EventManager.CarEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Control\EventManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAEAA=</HashCode>
+      <FileName>Assets\Scripts\Control\EventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeadZone">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAgAAAAABAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RacingTrack\DeadZone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarSkidTrail">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkA=</HashCode>
+      <FileName>Assets\Scripts\Car\CarSkidTrail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="carScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
