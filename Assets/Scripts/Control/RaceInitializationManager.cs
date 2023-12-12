@@ -12,13 +12,20 @@ public class RaceInitializationManager : MonoBehaviour
 
     [SerializeField] private GameObject easyTrack; // Prefabrykat ³atwiejszego toru
     [SerializeField] private GameObject difficultTrack; // Prefabrykat trudniejszego toru
+    [SerializeField] private GameObject easyTrackRewardPoints; // Prefabrykat punktów nagrody dla AI ³atwiejszego toru
+    [SerializeField] private GameObject difficultTrackRewardPoints; // Prefabrykat punktów nagrody dla AI trudniejszego toru
 
     private void Awake()
     {
         // 0 -> ³atwiejszy tor, 1 -> trudniejszy tor
-        if (GlobalGameManagerSingleton.SelectedRacingTrack == 0) { Instantiate(easyTrack); }
-        else if (GlobalGameManagerSingleton.SelectedRacingTrack == 1) { Instantiate(difficultTrack); }
-
+        if (GlobalGameManagerSingleton.SelectedRacingTrack == 0) { 
+            Instantiate(easyTrack);
+            Instantiate(easyTrackRewardPoints);
+        }
+        else if (GlobalGameManagerSingleton.SelectedRacingTrack == 1) { 
+            Instantiate(difficultTrack);
+            Instantiate(difficultTrackRewardPoints);
+        }
 
         if (GlobalGameManagerSingleton.NumberOfAICars == 0) return; // Je¿eli nie ma byæ pojazdów AI to pomijamy dalsz¹ czêœæ
 
@@ -29,6 +36,4 @@ public class RaceInitializationManager : MonoBehaviour
             newCar.GetComponent<SpriteRenderer>().sprite = carSprites[i]; // Zmieniamy jego grafikê
         }
     }
-
-
 }

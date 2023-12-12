@@ -13,7 +13,7 @@ public class RewardPoint : MonoBehaviour
             if (Mathf.Approximately(angle, 0f)) // Pojazd uderza od przodu
             {
                 //Nagroda
-                Debug.Log("Nagroda");
+                //Debug.Log("Nagroda");
             }
             if (Mathf.Approximately(angle, 180f)) // Pojazd uderza od ty³u
             {
