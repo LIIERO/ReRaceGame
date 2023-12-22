@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Car
   - Goal
+  - Reward Point
+  - TrackEdge
+  - StartPosition
   layers:
   - Default
   - TransparentFX

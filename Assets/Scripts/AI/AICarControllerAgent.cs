@@ -72,45 +72,49 @@ public class AICarControllerAgent : Agent
     {
         if (collision.gameObject.CompareTag("Reward Point"))
         {
-            Debug.Log("Reward");
+            //Debug.Log("Reward");
 
             reward = reward + 1;
             //Debug.Log(reward);
 
             AddReward(+1f);
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //if (collision.TryGetComponent<RewardPoint>(out RewardPoint rewardpoint))
-        //{
-            //Debug.Log("Reward");
 
-            //reward = reward + 1;
-            //Debug.Log(reward);
 
-            //AddReward(+1f);
-            
-        //}
-
-        if (collision.TryGetComponent<NegativeRewardPoint>(out NegativeRewardPoint negativerewardpoint))
+        if (collision.gameObject.CompareTag("TrackEdge"))
         {
-            //Debug.Log("DeadZone");
+            Debug.Log("DeadZone");
 
             reward = reward - 5;
-            Debug.Log(reward);
+            //Debug.Log(reward);
 
             AddReward(-5f);
             EndEpisode();
         }
 
-        if (collision.TryGetComponent<FinishLine>(out FinishLine finishline))
+        if (collision.gameObject.CompareTag("Goal"))
         {
-            Debug.Log("Finish");
+            Debug.Log("FINISH");
+
+            reward = reward + 5;
+            //Debug.Log(reward);
 
             AddReward(+5f);
-            
             EndEpisode();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("StartPosition"))
+        {
+            Debug.Log("StartPosition");
+
+            reward = 0;
+            //Debug.Log(reward);
+
+            SetReward(0f);
         }
     }
 
