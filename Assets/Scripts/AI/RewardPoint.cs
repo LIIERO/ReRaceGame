@@ -17,10 +17,10 @@ public class RewardPoint : MonoBehaviour
             }
             if (Mathf.Approximately(angle, 180f)) // Pojazd uderza od ty³u
             {
-                // Kara - pojazd zostaje ustawiony na starcie 
-                collision.gameObject.GetComponent<CarPhysics>().ResetTransform();
+                // Kara - pojazd zostaje ustawiony na starcie (je¿eli cofanie na start jest w³¹czone - uczenie AI)
+                if (DeadZone.ResetCarTransformOnDeadZone) collision.gameObject.GetComponent<CarPhysics>().ResetTransform();
+                else collision.gameObject.GetComponent<CarPhysics>().RotationAngle += 180; // W przeciwnym wypadku pojazd jest odwracany
             }
-
         }
     }
 }

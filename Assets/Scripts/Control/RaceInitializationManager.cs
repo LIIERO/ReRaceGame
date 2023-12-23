@@ -7,6 +7,7 @@ public class RaceInitializationManager : MonoBehaviour
     // Skrypt odpowiedzialny za instancjowanie pojazdów AI przed rozpoczêciem wyœcigu
 
     [SerializeField] private GameObject AICarPrefab; // Prefabrykat pojazdu AI
+    [SerializeField] private string AICarBaseName; // Bazowa nazwa pojazdu AI
     [SerializeField] private Sprite[] carSprites; // Grafiki pojazdów
     [SerializeField] private Transform[] carPositions; // Miejsca w których maj¹ siê pojawiæ
 
@@ -33,6 +34,7 @@ public class RaceInitializationManager : MonoBehaviour
         for (int i = 0; i < GlobalGameManagerSingleton.NumberOfAICars; i++) 
         {
             GameObject newCar = Instantiate(AICarPrefab, carPositions[i]); // Tworzymy nowy pojazd w nowym miejscu
+            newCar.name = AICarBaseName + i.ToString(); // Zmieniamy jego nazwê
             newCar.GetComponent<SpriteRenderer>().sprite = carSprites[i]; // Zmieniamy jego grafikê
         }
     }

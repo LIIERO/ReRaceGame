@@ -3098,6 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AICarPrefab: {fileID: 9054799387415115019, guid: fcba6cc5a3979f849af8ea9085ef9a7b, type: 3}
+  AICarBaseName: Komputer
   carSprites:
   - {fileID: 21300000, guid: c6dd069ebcd4594438322c958895835d, type: 3}
   - {fileID: 21300000, guid: 9d6ae75511e597d4d97896e1efdabc70, type: 3}
@@ -3166,7 +3167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9054799387415115019, guid: fbfaa3ca30b952c4fb755e018857adc6, type: 3}
       propertyPath: m_Name
-      value: PlayerCar
+      value: Gracz
       objectReference: {fileID: 0}
     - target: {fileID: 9054799387415115019, guid: fbfaa3ca30b952c4fb755e018857adc6, type: 3}
       propertyPath: m_IsActive
@@ -3412,7 +3413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1610682941478466434, guid: 33bcf269c50424349b6a7a7f4c30e49d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2184779739461753952, guid: 33bcf269c50424349b6a7a7f4c30e49d, type: 3}
       propertyPath: m_LocalPosition.x

@@ -7,7 +7,7 @@ public class CarPhysics : MonoBehaviour
     // Stan pojazdu (zmienny)
     public GameInput CarInput { get; set; } = new();
     public bool IsControllable { get; private set; } = false; // pojazd mo¿e przyspieszaæ, wartoœæ pocz¹tkowa to false poniewa¿ pojazd musi poczekaæ na pocz¹tek wyœcigu
-    public float RotationAngle { get; private set; } = 0f;
+    public float RotationAngle { get; set; } = 0f;
     public float VelocityVsUp { get; private set; } = 0f;
     
 
