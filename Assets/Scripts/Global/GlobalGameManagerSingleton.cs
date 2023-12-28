@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class GlobalGameManagerSingleton : MonoBehaviour
 {
     // Liczba pojazdów sztucznej inteligencji, które maj¹ siê pojawiæ w wyœcigu
-    public static int NumberOfAICars { get; private set; } = 3; // 3 rywali to wartoœæ domyœlna
+    public static int NumberOfAICars { get; private set; } = 6; // 3 rywali to wartoœæ domyœlna
     // Wybrany tor wyœcigowy
     public static int SelectedRacingTrack { get; private set; } = 0; // 0 -> ³atwiejszy tor, 1 -> trudniejszy tor
 
