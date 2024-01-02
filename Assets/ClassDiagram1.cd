@@ -3,7 +3,7 @@
   <Class Name="CarPhysics">
     <Position X="10.5" Y="1.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACwAAABQAAIABAAAAAQQBAAAIAQAAEAQgCEw=</HashCode>
+      <HashCode>AAAAAAAACwAAABQAAICBAAAAAQQBAAAIAQAAEAQgCEw=</HashCode>
       <FileName>Assets\Scripts\Car\CarPhysics.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -17,43 +17,21 @@
       <FileName>Assets\Scripts\InputGeneration\GameInput.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CarController">
-    <Position X="17" Y="2" Width="1.5" />
-    <AssociationLine Name="currentInput" Type="GameInput" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="17" Y="3.188" />
-        <Point X="14.875" Y="3.188" />
-        <Point X="14.875" Y="4.25" />
-      </Path>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAQCAAAAACAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\InputGeneration\CarController.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="CarScript" />
-      <Field Name="currentInput" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="AICarController" Collapsed="true">
-    <Position X="16.25" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\InputGeneration\AICarController.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="PlayerCarController">
-    <Position X="18.25" Y="5" Width="1.5" />
+    <Position X="16" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAQAAAAAACAAAAIAAAAABAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAQAAACAACAAAAIAAAAABAAAAAAAAEAAAAAAAAgA=</HashCode>
       <FileName>Assets\Scripts\InputGeneration\PlayerCarController.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="carScript" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="CameraMovement">
-    <Position X="7.25" Y="5.25" Width="1.5" />
+    <Position X="8" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQQABECAAABAIAAAAIAABAAAIAAQMAAAAAAAAGgA=</HashCode>
-      <FileName>Assets\Scripts\Control\CameraMovement.cs</FileName>
+      <HashCode>AAAAQQADECAAAAAIAAAAIAABAAAIAAQMAAAAAAAAGgA=</HashCode>
+      <FileName>Assets\Scripts\Camera\CameraMovement.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="carScript" />
@@ -62,7 +40,7 @@
   <Class Name="CountdownManager">
     <Position X="16.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAACACAAAAgAAQABAABMAAAAAAAAAAAAAAAAAQI=</HashCode>
+      <HashCode>AAQAAAACACAAAAgAAQABAABOAAAAAAAAAAAAAAAAAQI=</HashCode>
       <FileName>Assets\Scripts\Control\CountdownManager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -76,7 +54,7 @@
   <Class Name="TimeManager">
     <Position X="9.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQQAAAAAAgBAAAAAAAAAAAAIAgAAAAAIAAAQAgAACAA=</HashCode>
+      <HashCode>AAQAAAAAACBAAAAAAAAAAAAAAgAAAAAIAAEQAgAACAA=</HashCode>
       <FileName>Assets\Scripts\Control\TimeManager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -107,21 +85,18 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DeadZone">
-    <Position X="7.25" Y="1" Width="1.5" />
+    <Position X="8" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAgAAAAABAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAgABAAABAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\RacingTrack\DeadZone.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CarSkidTrail">
-    <Position X="7.25" Y="3.25" Width="1.5" />
+  <Class Name="RaceInitializationManager">
+    <Position X="14.25" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkA=</HashCode>
-      <FileName>Assets\Scripts\Car\CarSkidTrail.cs</FileName>
+      <HashCode>AACBAAAIAAAAAAAAAAAAACAICAAAgAAAAAAAAEAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Control\RaceInitializationManager.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="carScript" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
